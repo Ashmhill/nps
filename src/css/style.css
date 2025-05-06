@@ -268,11 +268,11 @@ svg {
 
 /* Footer Styling */
 footer {
-  background-color: var(--bs-grey-4);
-  color: var(--bs-white);
-  text-align: center;
-  padding: 1em;
+  background-image: url("images/topo.png");
+  background-size: cover;
+  background-position: center;
 }
+
 
 /* Responsive styles for small screens */
 @media (max-width: 600px) {
