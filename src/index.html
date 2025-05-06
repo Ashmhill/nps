@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Head: Metadata, styles, and scripts -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: Replace with dynamic Park Name-->
     <title>[Park Name]</title>
+    <!-- TODO: Link Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- TODO: Link Javascript module-->
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
+    <!-- Site Disclaimer -->
     <p class="disclaimer">
       This is not a real NPS website. It is an educational exercise. If you
       landed here by accident, to find the real website visit
       <a href="parkUrl">[park name]</a>
     </p>
+    <!-- Skip Links for accessibility-->
     <div class="skip-links" aria-label="short-cut links" role="navigation">
       <ul>
         <li>
@@ -41,6 +47,7 @@
         </li>
       </ul>
     </div>
+    <!-- Global header and navigation -->
     <header>
       <section class="global-header">
         <a href="index.html" class="site-title"
@@ -80,6 +87,7 @@
           </ul>
         </nav>
       </section>
+      <!-- Park-specific header-->
       <section id="park-header">
         <a href="#">
           <span>Info</span>
@@ -92,7 +100,9 @@
         </svg>
       </section>
     </header>
+    <!-- Main content area-->
     <main id="main"></main>
+    <!-- Footer with park information -->
     <footer id="park-footer"></footer>
   </body>
 </html>

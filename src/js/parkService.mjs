@@ -1,3 +1,6 @@
+// Provides static park data for local development
+// In a future version, this function could fetch live data from the NPS API
+
 const park = {
   id: "F58C6D24-8D10-4573-9826-65D42B8B83AD",
   url: "https://www.nps.gov/yell/index.htm",
@@ -179,6 +182,7 @@ const park = {
   designation: "National Park"
 };
 
+// Function to return the park data
 export function getParkData() {
   return park;
 }

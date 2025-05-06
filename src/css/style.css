@@ -171,3 +171,135 @@ svg {
   background-color: var(--bs-black);
   fill: white;
 }
+
+/* Global header layout */
+.global-header {
+  background-color: var(--bs-black);
+  color: var(--bs-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+
+/* Right side of the global header (search and menu buttons) */
+.global-header__right {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+/* Global menu toggle button */
+#global-nav-toggle {
+  background: none;
+  border: none; 
+  color: var(--bs-white);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  cursor: pointer;
+}
+
+/* Global navigation styles */
+.global-nav {
+  background-color: var(--bs-grey-4);
+  color: var(--bs-white);
+  padding: 1em;
+}
+
+.global-nav__section-heading {
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+}
+
+.global-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Split button inside the navigation menu */
+.global-nav__split-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bs-grey-5);
+  padding: 0.5em 0.75em;
+  border-radius: var(--bs-border-radius);
+  color: var(--bs-white);
+}
+
+.global-nav__split-button a {
+  color: var(--bs-white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.global-nav__split-button__toggle {
+  background: none;
+  border: none;
+  color: var(--bs-white);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Standard icon styling */
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: var(--bs-white);
+  margin-left: 0.25em;
+}
+
+/* Park-specific header styling */
+#park-header {
+  background-color: var(--bs-chathams-blue);
+  color: var(--bs-white);
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#park-header.has-alert {
+  border-left: 6px solid var(--bs-warning);
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--bs-grey-4);
+  color: var(--bs-white);
+  text-align: center;
+  padding: 1em;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+  .global-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .global-header__right {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+
+  .global-nav {
+    font-size: 0.95rem;
+  }
+
+  #park-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  .global-nav__split-button {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+}
